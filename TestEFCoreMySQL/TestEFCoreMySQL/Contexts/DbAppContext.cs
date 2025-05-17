@@ -15,8 +15,12 @@ namespace TestEFCoreMySQL.Contexts
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseMySql(
-                "server=localhost;port=3306;user=root;password=;database=testefcoremysql_db;",
-                new MySqlServerVersion(new Version(8, 2, 12)
+                 "server=localhost;" +
+                 "port=3306;" +
+                 "user=root;" +
+                 "password=;" +
+                 "database=testefcoremysql_db;",
+                 new MySqlServerVersion(new Version(8, 2, 12)
             ));
         }
 
